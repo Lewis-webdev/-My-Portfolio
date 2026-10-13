@@ -1,0 +1,640 @@
+
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsla(0, 4%, 95%, 0.788);
+    color: #111;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+/* =========================
+   HEADER AND NAVIGATION
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 35px;
+    background-color: grey;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 26px;
+}
+
+.logo p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcccc;
+}
+
+.Get-btn {
+    display: inline-block;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* =========================
+   HOME SECTION
+========================= */
+
+.Student {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 70vh;
+    padding: 50px 7%;
+}
+
+.text-wrapper {
+    flex: 1;
+    min-width: 0;
+}
+
+.greetings p {
+    font-size: 55px;
+}
+
+.text-wrapper > p {
+    font-size: 40px;
+}
+
+.name {
+    color: blue;
+    font-size: 40px;
+}
+
+.Web p {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.Student-Card {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.Student-img {
+    width: min(100%, 420px);
+    aspect-ratio: 1 / 1;
+    background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Student-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn-gradient {
+    display: inline-block;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(101, 126, 255, 0.7);
+}
+
+.icons {
+    display: flex;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.icons a {
+    color: #222;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: blue;
+}
+
+.icons .fa-whatsapp {
+    color: green;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+h2 {
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 55px 0 35px;
+}
+
+.prj {
+    margin-bottom: 35px;
+}
+
+.prj h2 {
+    margin-bottom: 0;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.image {
+    padding: 20px 7% 50px;
+}
+
+.image > h2 {
+    margin-top: 35px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-card {
+    flex: 1.2;
+    min-width: 0;
+}
+
+.lewis p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.into p {
+    font-size: 19px;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.image-card {
+    flex: 0.8;
+    min-width: 0;
+}
+
+.image-card img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section {
+    padding: 10px 7% 50px;
+}
+
+.about-skills-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    width: 100%;
+}
+
+.skills-container {
+    flex: 1;
+    min-width: 0;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.bar {
+    width: 100%;
+    height: 14px;
+    background-color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.skill-img {
+    flex: 1;
+    min-width: 0;
+}
+
+.skill-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects-section {
+    padding: 10px 5% 50px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 5 / 3;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.project-card:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    padding: 10px 20px 60px;
+}
+
+.form-action {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-action input,
+.form-action textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #6c5cc7;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: white;
+}
+
+.form-action input:focus,
+.form-action textarea:focus {
+    border-color: blue;
+}
+
+.form-action textarea {
+    resize: vertical;
+}
+
+.send-btn {
+    align-self: flex-end;
+    background: blue;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.send-btn:hover {
+    background: #0000cc;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media screen and (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .Student {
+        padding: 40px 5%;
+        gap: 25px;
+    }
+
+    .Student-Card {
+        width: 38%;
+    }
+
+    .greetings p {
+        font-size: 42px;
+    }
+
+    .text-wrapper > p,
+    .name {
+        font-size: 32px;
+    }
+
+    .Web p {
+        font-size: 25px;
+    }
+
+    .about-content {
+        gap: 25px;
+    }
+
+    .into p {
+        font-size: 17px;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 12px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        gap: 12px 16px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .Student {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .text-wrapper {
+        width: 100%;
+    }
+
+    .greetings p {
+        font-size: 36px;
+    }
+
+    .text-wrapper > p,
+    .name {
+        font-size: 29px;
+    }
+
+    .Web p {
+        font-size: 22px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-gradient {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+
+    .icons {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .Student-Card {
+        width: 100%;
+    }
+
+    .Student-img {
+        width: min(75vw, 300px);
+    }
+
+    h2 {
+        font-size: 32px;
+        margin: 35px 0 25px;
+    }
+
+    .image {
+        padding: 10px 20px 35px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .text-card,
+    .image-card {
+        width: 100%;
+    }
+
+    .lewis p {
+        font-size: 25px;
+    }
+
+    .into p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .image-card img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .skills-section {
+        padding: 10px 20px 35px;
+    }
+
+    .about-skills-section {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .skills-container,
+    .skill-img {
+        width: 100%;
+    }
+
+    .skill-img img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .projects-section {
+        padding: 10px 15px 35px;
+    }
+
+    .project-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .project-card {
+        aspect-ratio: 16 / 9;
+    }
+
+    .contact-section {
+        padding: 10px 15px 40px;
+    }
+
+    .form-action {
+        max-width: 100%;
+    }
+}
